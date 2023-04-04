@@ -551,7 +551,8 @@ img {
 .check-text {
   display: flex;
 }
-.check-text span {
+
+/* .check-text span {
   width: 16px;
   height: 16px;
   border: 1px solid var(--title-text-color);
@@ -566,13 +567,23 @@ img {
   border: none;
   fill: var(--text-logo-footer-color);
 }
-/* .check-text::before {
-  content: "";
+.check-text-privacy {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--border-color);
   margin-left: 8px;
+} */
+.check-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--border-color);
+  gap: 8px;
+  align-items: center;
+}
+.check-text::before {
+  content: "";
   width: 16px;
   height: 16px;
   border: 1px solid var(--title-text-color);
@@ -582,14 +593,14 @@ img {
 .modal-check:checked + .check-text::before {
   background-color: var(--hover-color);
   border: none;
-} */
+  background-image: url(../images/SVG/click.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .policy-text {
   color: var(--accent-color);
 }
-/* .modal-field {
-  display: flex;
-  align-items: center;
-} */
+
 /* footer */
 .footer {
   background-color: var(--title-text-color);
