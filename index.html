@@ -558,28 +558,35 @@
             </svg>
           </div>
 
-          <div>
-            <label for="user-comment"
-              ><span class="text-p-modal">Comment</span></label
-            >
-            <textarea
-              name="user-comment"
-              id="user-comment"
-              class="modal-text-input"
-              placeholder="Text input"
-            ></textarea>
-          </div>
+          <label for="user-comment"
+            ><span class="text-p-modal">Comment</span></label
+          >
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            class="modal-text-input"
+            placeholder="Text input"
+          ></textarea>
+
           <div class="modal-field">
             <input
               type="checkbox"
-              id="privacy-policy"
-              name="privacy-policy"
-              class="privacy-policy"
+              id="privacy"
+              name="user-privacy"
+              class="modal-check visually-hidden"
               required
               value="true"
             />
-            <label for="privacy-policy" class="check-text"
-              >I accept the terms and conditions of the
+            <label for="privacy" class="check-text">
+              <span>
+                <svg Width="16" Height="16">
+                  <use
+                    href="./images/SVG/Sprite SVG/symbol-defs1.svg#icon-click"
+                  ></use>
+                </svg>
+              </span>
+
+              I accept the terms and conditions of the
               <a href="" class="policy-text">Privacy Policy</a></label
             >
           </div>

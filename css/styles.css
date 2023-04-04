@@ -470,6 +470,7 @@ img {
 }
 .input-wrap {
   position: relative;
+  margin-bottom: 8px;
 }
 .modal-input-icon {
   position: absolute;
@@ -485,7 +486,6 @@ img {
   border: 1px solid var(--title-text-color);
   opacity: 0.2;
   border-radius: 4px;
-  margin-bottom: 8px;
   padding-left: 38px;
   outline: transparent;
 }
@@ -516,6 +516,7 @@ img {
 .button-send {
   display: flex;
   justify-content: center;
+  margin-top: 16px;
 }
 .send {
   color: var(--section-title-text-color);
@@ -531,7 +532,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 16px;
 }
 /* .modal-input:not(:focus):not(:placeholder-shown):valid {
   background-color: rgb(16, 165, 8);
@@ -542,27 +542,54 @@ img {
 .send:is(:hover, :focus) {
   background-color: var(--hover-color);
 }
-.privacy-policy:only-of-type {
+/* .privacy-policy:only-of-type {
   width: 16px;
   height: 16px;
   border: 1px solid var(--title-text-color);
   border-radius: 2px;
-}
+} */
 .check-text {
-  font-weight: 400;
+  display: flex;
+}
+.check-text span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--title-text-color);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
+}
+.modal-check:checked + .check-text span {
+  background-color: var(--hover-color);
+  border: none;
+  fill: var(--text-logo-footer-color);
+}
+/* .check-text::before {
+  content: "";
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--border-color);
   margin-left: 8px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--title-text-color);
+  border-radius: 2px;
+  display: block;
 }
+.modal-check:checked + .check-text::before {
+  background-color: var(--hover-color);
+  border: none;
+} */
 .policy-text {
   color: var(--accent-color);
 }
-.modal-field {
+/* .modal-field {
   display: flex;
   align-items: center;
-}
+} */
 /* footer */
 .footer {
   background-color: var(--title-text-color);
